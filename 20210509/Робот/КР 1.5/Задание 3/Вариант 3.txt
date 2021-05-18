@@ -1,0 +1,27 @@
+https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3567-kr_15_vspomogatelnyi_algoritm.html
+использовать Робот
+алг
+нач
+	нц 5 раз
+		робот
+		вправо
+	кц
+кон
+алг робот
+нач
+	нц 4 раз
+		закрасить
+		вниз
+		вниз
+	кц
+	закрасить
+	вправо
+	нц 4 раз
+		закрасить
+		вверх
+		вверх
+	кц
+	закрасить
+	вправо
+кон
+
