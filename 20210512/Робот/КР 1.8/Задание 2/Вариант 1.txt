@@ -1,0 +1,18 @@
+https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3570-kr_18_cikl_s_predusloviem_cikl_poka.html
+использовать Робот
+алг 
+нач
+	нц пока слева стена
+		закрасить
+		вверх
+	кц
+	вниз
+	нц пока справа свободно
+		вправо
+		закрасить
+	кц
+	нц пока справа стена
+		закрасить
+		вверх
+	кц
+кон
