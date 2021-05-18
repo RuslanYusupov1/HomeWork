@@ -1,0 +1,19 @@
+https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3566-kr_14_vlozhennye_cikly_cikl_v_cikle.html
+использовать Робот
+алг
+нач
+	нц 7 раз
+		нц 3 раз
+			вниз
+			вниз
+			закрасить
+			вниз
+		кц
+		вправо
+		нц 9 раз
+			вверх
+			закрасить
+		кц
+		вправо
+	кц
+кон
