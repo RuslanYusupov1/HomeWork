@@ -1,4 +1,4 @@
-https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3568-kr_16_ispolzovanie_peremennyh_algoritmy_s_argumentami.html
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3568-kr_16_ispolzovanie_peremennyh_algoritmy_s_argumentami.html
 использовать Робот
 алг 
 нач цел a, b, c
