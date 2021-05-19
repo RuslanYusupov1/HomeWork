@@ -1,4 +1,4 @@
-https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3566-kr_14_vlozhennye_cikly_cikl_v_cikle.html
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3566-kr_14_vlozhennye_cikly_cikl_v_cikle.html
 использовать Робот
 алг
 нач 
