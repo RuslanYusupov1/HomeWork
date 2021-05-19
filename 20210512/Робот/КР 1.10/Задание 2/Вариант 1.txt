@@ -1,4 +1,4 @@
-https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3572-kr_110_komandy_vetvleniya_esli__vybor.html
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3572-kr_110_komandy_vetvleniya_esli__vybor.html
 использовать Робот
 алг 
 нач

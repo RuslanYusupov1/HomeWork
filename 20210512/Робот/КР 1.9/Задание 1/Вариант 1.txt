@@ -1,4 +1,4 @@
-https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3571-kr_19_algoritm_s_rezultatami.html
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3571-kr_19_algoritm_s_rezultatami.html
 использовать Робот
 алг счет (рез цел a, c, d) 
 нач
