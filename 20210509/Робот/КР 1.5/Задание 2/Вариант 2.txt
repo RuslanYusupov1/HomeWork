@@ -1,4 +1,4 @@
-https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3567-kr_15_vspomogatelnyi_algoritm.html
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3567-kr_15_vspomogatelnyi_algoritm.html
 использовать Робот
 алг
 нач
