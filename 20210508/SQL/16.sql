@@ -4,9 +4,15 @@
 	В результате каждая пара указывается только один раз, т.е. (i,j), но не (j,i),
 	Порядок вывода: модель с большим номером, модель с меньшим номером, скорость и RAM.
 */
-select p.model,	l.model, p.speed, p.ram
-from PC as p
-	join PC as l on l.speed = p.speed
-		and l.ram = p.ram 
-		and l.model < p.model
-group by p.model, l.model, p.speed, p.ram
+select b.model,	a.model, b.speed, a.ram
+from PC as a
+	join PC as b on b.speed = a.speed
+		and exists (
+				select 1 
+				from pc c 
+				where c.model = b.model
+					and b.model > a.model
+					and a.ram = b.ram
+					and a.speed = b.speed
+			)
+					
