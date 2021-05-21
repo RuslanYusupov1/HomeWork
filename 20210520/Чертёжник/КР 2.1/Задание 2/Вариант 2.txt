@@ -1,0 +1,12 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3573-kr_21_lineinye_algoritmy_risovanie_prostyh_figur.html
+использовать Чертежник
+алг 
+	нач
+	цел x, y
+	установить цвет ("красный")
+	опустить перо
+	сместиться в точку (0, 11)
+	сместиться в точку (11, 11)
+	сместиться в точку (11, 0)
+	сместиться в точку (0, 0)
+кон
