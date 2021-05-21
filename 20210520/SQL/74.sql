@@ -17,5 +17,5 @@ where c.country = 'Russia'
 					select c.country, c.class
 					from classes as class
 					where c.country = 'Russia'
-				)
+					)
 			)
