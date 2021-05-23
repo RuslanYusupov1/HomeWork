@@ -5,5 +5,9 @@
 select distinct pt.maker, pr.price 
 from printer as pr
 	join product as pt on pr.model = pt.model
-where pr.price = all(select min(prin.price) from printer as prin where prin.color = 'y')
+where pr.price = all(
+		select min(prin.price) 
+		from printer as prin 
+		where prin.color = 'y'
+	)
 	and pr.color = 'y'
