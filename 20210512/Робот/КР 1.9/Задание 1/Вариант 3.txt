@@ -1,0 +1,15 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3571-kr_19_algoritm_s_rezultatami.html
+использовать Робот
+алг счет (рез цел a) 
+нач
+	нц пока снизу свободно
+		вниз
+	кц
+	a:=0
+	|Вычисляем длину коридора
+	нц пока сверху свободно
+		вверх
+		a:=a+1
+	кц
+	вывод "Координаты "
+кон
