@@ -1,0 +1,16 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3569-kr_17_cikl_s_parametrom_cikl_dlya.html
+использовать Робот
+алг
+нач
+цел i
+нц для i от 7 до 1 шаг -1
+нц i раз
+закрасить
+вверх
+кц
+вправо
+нц i раз
+вниз
+кц
+кц
+кон
