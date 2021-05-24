@@ -4,7 +4,7 @@
 	с отчетностью не чаще одного раза в день. Вывод: пункт, остаток.
 	Замечание. Не учитывать пункты, информации о которых нет до указанной даты
 */
-select a.point, SUM(inc)
+select a.point, SUM(a.inc)
 from (
 		select i.point, i.date, i.inc
 		from Income_o as i
