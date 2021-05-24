@@ -11,4 +11,4 @@ Where p.maker in (
 		group by p.maker having count(distinct type) = 1
 	)
 group by p.maker, p.type
-having count(type) >  1
+having count(type) > 1
