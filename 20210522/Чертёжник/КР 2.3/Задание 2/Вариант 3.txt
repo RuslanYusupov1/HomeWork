@@ -1,0 +1,21 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3575-kr_23_algoritmy_s_argumentami_vspomogatelnyi_algoritm_s_argumentami_v_cikle.html
+использовать Чертежник
+алг
+нач
+цел a, b, i, x
+вывод "введите число a="
+ввод a
+вывод "введите число b="
+ввод b
+вывод "введите количество повторений цикла="
+ввод x
+нц для i от 1 до x
+установить цвет ("красный")
+опустить перо
+сместиться на вектор (a*i, -b*i)
+сместиться на вектор (-a*i, -b*i)
+сместиться на вектор (-a*i, b*i)
+сместиться на вектор (a*i, b+i)
+кц
+кон
+
