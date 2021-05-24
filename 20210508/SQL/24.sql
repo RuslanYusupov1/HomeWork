@@ -11,7 +11,7 @@ from (
 		select pr.model, pr.price from printer as pr
 	) as a
 where price = (
-	select max(price)
+	select max(b.price)
 	from (
 			select p.model, p.price from pc as p
 			union
