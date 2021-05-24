@@ -6,14 +6,14 @@ Select c.country, c.class
 from classes as c
 where (
 		c.country = 'Russia' 
-			and 'Russia' = any(
+			and 'Russia' = any (
 				select c.country 
 				from classes as c
 			)
 	)
 	or (
-		c.country!='Russia' 
-			and not('Russia' = any(
+		c.country != 'Russia' 
+			and not ('Russia' = any ( 
 				select c.country 
 				from classes as c
 			)
