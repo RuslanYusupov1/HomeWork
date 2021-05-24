@@ -8,9 +8,9 @@ from (
 		from classes as c,ships as s 
 		where c.class=s.class 
 		union
-			select c.class, o.ship 
-			from classes as c,outcomes as o 
-			where c.class = o.ship 
+		select c.class, o.ship 
+		from classes as c,outcomes as o 
+		where c.class = o.ship 
 	) as a 
 group by a.class 
 having count(name) = 1

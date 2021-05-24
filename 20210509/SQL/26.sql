@@ -9,8 +9,8 @@ from (
 		where pr.maker = 'A' 
 			and Pr.model = PC.model
 		union all
-			select l.price 
-			from Product, Laptop as l
-			where maker = 'A' 
-				and Product.model = l.model
+		select l.price 
+		from Product, Laptop as l
+		where maker = 'A' 
+			and Product.model = l.model
 	) as a
