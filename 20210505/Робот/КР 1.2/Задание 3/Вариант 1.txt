@@ -1,0 +1,16 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3564-kr_12_ciklicheskie_algoritmy_cikl_n_raz.html
+использовать Робот
+алг 
+нач
+	нц 2 раз
+		закрасить
+		вправо
+		вниз
+	кц
+	нц 2 раз
+		закрасить
+		влево
+		вниз
+	кц
+	закрасить
+кон

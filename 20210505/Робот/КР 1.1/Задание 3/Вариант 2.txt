@@ -1,0 +1,12 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3563-kr_11_lineinye_algoritmy.html
+использовать Робот
+алг 
+нач
+	вверх
+	вправо
+	вниз
+	вправо
+	вверх
+	вправо
+	вниз
+кон
