@@ -3,27 +3,25 @@
 	Для классов, имеющих потери в виде потопленных кораблей и не менее 3 кораблей в базе данных,
 	вывести имя класса и число потопленных кораблей
 */
-select class as c, count(ship)
-from (
-		select class, ship
-		from Outcomes as o
-			join Ships as s on o.ship = s.name and result = 'sunk'
-		union
-			select c.class, o.ship
-			from Outcomes
-				join Classes as c on o.ship = c.class and result = 'sunk'
-	) as t1
+with t1 as (
+		select s.name, c.class 
+		from ships as s
+			join classes as c on c.class = s.class
+		union 
+		select o.ship, c.class 
+		from outcomes as o
+			join classes as c on c.class = o.ship
+	)
+select c.class, SUM(case when o.result = 'sunk' then 1 else 0 end) as Sunks
+	from outcomes as o
+    left join ships as s on o.ship = s.name
+    left join classes as c on c.class = o.ship 
+		or c.class = s.class
 where c.class in (
-		select class
-		from (
-				select class, name
-				from Ships
-				union
-				select ship, ship
-				from Outcomes
-					join Classes on ship = class
-			) as t2	
-		group by class
-		having count( name ) > 2
-		)
-group by class
+		select t1.class 
+		from t1 
+		group by t1.class 
+		having count(*) >= 3
+	)
+group by c.class
+having SUM(case when o.result = 'sunk' then 1 else 0 end) > 0

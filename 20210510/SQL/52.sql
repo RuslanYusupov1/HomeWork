@@ -6,14 +6,14 @@
 select s.name 
 from ships s
 	join (
-			select c.class,  
-			isnull(c.country, '') as country,
-			isnull(c.type, 'bb') as type,
-			isnull(c.numGuns, 9) as numGuns,
-			isnull(c.bore, 18) as bore,
-			isnull(c.displacement, 65000) as displacement
+			select c.class  
+				,isnull(c.country, '') as country
+				,isnull(c.type, 'bb') as type
+				,isnull(c.numGuns, 9) as numGuns
+				,isnull(c.bore, 18) as bore
+				,isnull(c.displacement, 65000) as displacement
 			from Classes as c
-		) as a on a.class=s.class
+		) as a on a.class = s.class
 where a.country = 'Japan' 
 	and a.type = 'bb' 
 	and a.numGuns >= 9 

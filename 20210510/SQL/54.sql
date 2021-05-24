@@ -8,6 +8,6 @@ from (
 		select s.name, s.class from ships as s
 		union
 		select o.ship, o.ship from outcomes as o
-	) t
+	) as t
 		join classes c on t.class = c.class
 			where c.type = 'bb'

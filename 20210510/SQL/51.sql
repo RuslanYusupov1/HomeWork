@@ -13,9 +13,9 @@ with all_ships as (
 select a.name 
 from all_ships as a
 	join Classes c on (a.class = c.class)
-where c.numGuns > = all (
-			select numGuns
+where c.numGuns >= all (
+			select c.numGuns
 			from Classes
 			where displacement = c.displacement
-			and class in (select class from all_ships)
+				and class in (select a.class from all_ships as a)
 		)
