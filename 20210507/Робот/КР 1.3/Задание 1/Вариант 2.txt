@@ -1,0 +1,27 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3565-kr_13_ispolzovanie_ciklov_pri_sozdanii_ornamentov.html
+использовать Робот
+алг 
+нач
+	нц 4 раз
+		закрасить
+		вправо
+		закрасить
+		вправо
+		закрасить
+		вниз
+		закрасить
+		вправо
+	кц
+	влево
+	вниз
+	нц 5 раз
+		закрасить
+		влево
+		закрасить
+		влево
+		закрасить
+		вверх
+		закрасить
+		влево
+	кц
+кон
