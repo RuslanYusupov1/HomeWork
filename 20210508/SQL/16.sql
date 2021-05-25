@@ -7,12 +7,5 @@
 select distinct b.model, a.model, b.speed, a.ram
 from PC as a
 	join PC as b on b.speed = a.speed
-		and exists (
-				select 1 
-				from pc as c 
-				where c.model = b.model
-					and b.model > a.model
-					and a.ram = b.ram
-					and a.speed = b.speed
-			)
-					
+where b.model > a.model 
+	and b.ram = a.ram

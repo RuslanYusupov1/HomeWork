@@ -11,12 +11,12 @@ from (
 		select pr.model, pr.price from printer as pr
 	) as a
 where price = (
-	select max(b.price)
-	from (
-			select p.model, p.price from pc as p
-			union
-			select l.model, l.price from laptop as l
-			union
-			select pr.model, pr.price from printer as pr
-		) as b
-	)
+			select max(b.price)
+			from (
+					select p.model, p.price from pc as p
+					union
+					select l.model, l.price from laptop as l
+					union
+					select pr.model, pr.price from printer as pr
+				) as b
+		)
