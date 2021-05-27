@@ -1,0 +1,21 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3568-kr_16_ispolzovanie_peremennyh_algoritmy_s_argumentami.html
+использовать Робот
+алг 
+нач цел a, b, c
+	вывод "Введите число b = "
+	ввод a
+	нц для a от b до 1 шаг 1
+	кц
+	нц b раз
+		закрасить
+		вверх
+	кц
+	вывод "Введите число с = "
+	ввод a
+	нц для a от c до 1 шаг 1
+	кц
+	нц c раз
+		закрасить
+		вправо
+	кц
+кон
