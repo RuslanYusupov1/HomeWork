@@ -12,8 +12,8 @@ with t1 as (
 		from outcomes as o
 			join classes as c on c.class = o.ship
 	)
-select c.class, SUM(case when o.result = 'sunk' then 1 else 0 end) as Sunks
-	from outcomes as o
+select c.class, sum(case when o.result = 'sunk' then 1 else 0 end) as sunks
+from outcomes as o
     left join ships as s on o.ship = s.name
     left join classes as c on c.class = o.ship 
 		or c.class = s.class
@@ -24,4 +24,4 @@ where c.class in (
 		having count(*) >= 3
 	)
 group by c.class
-having SUM(case when o.result = 'sunk' then 1 else 0 end) > 0
+having sum(case when o.result = 'sunk' then 1 else 0 end) > 0
