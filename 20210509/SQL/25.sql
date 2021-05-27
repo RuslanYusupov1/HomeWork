@@ -8,10 +8,10 @@ from Product as pr
 	join PC on pr.model = PC.model
 where pc.ram = (select min(ram) from PC)
 	and PC.speed = (
-					select min(speed) 
-					from PC 
-					where PC.ram = (select min(ram) from PC)
-				)	
+			select min(speed) 
+			from PC 
+			where PC.ram = (select min(ram) from PC)
+		)	
 	intersect
 	select pr.maker
 	from Product as pr

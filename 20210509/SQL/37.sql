@@ -5,12 +5,12 @@
 select a.class 
 from (
 		select c.class, s.name 
-		from classes as c,ships as s 
-		where c.class=s.class 
+		from classes as c, ships as s 
+		where c.class = s.class 
 		union
 		select c.class, o.ship 
-		from classes as c,outcomes as o 
+		from classes as c, outcomes as o 
 		where c.class = o.ship 
 	) as a 
 group by a.class 
-having count(name) = 1
+having count(a.name) = 1
