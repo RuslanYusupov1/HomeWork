@@ -6,4 +6,7 @@
 select distinct p.type, l.model, l.speed 
 from product as p
 	join laptop as l on p.model = l.model
-where l.speed < all(select pc.speed from PC)
+		and l.speed < all(
+				select pc.speed 
+				from PC
+			)
