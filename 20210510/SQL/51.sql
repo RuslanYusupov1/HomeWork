@@ -4,18 +4,18 @@
 	такого же водоизмещения (учесть корабли из таблицы Outcomes)
 */
 with all_ships as (
-		select s.name,s.class 
+		select s.name, s.class 
 		from Ships as s
 		union
-		select o.ship,o.ship 
+		select o.ship, o.ship 
 		from Outcomes as o
 	)
 select a.name 
 from all_ships as a
 	join Classes c on (a.class = c.class)
 where c.numGuns >= all (
-			select c.numGuns
-			from Classes
-			where displacement = c.displacement
-				and class in (select a.class from all_ships as a)
-		)
+		select c.numGuns
+		from Classes as c
+		where displacement = c.displacement
+			and class in (select a.class from all_ships as a)
+	)

@@ -3,7 +3,7 @@
 	С точностью до 2-х десятичных знаков определите среднее число орудий всех линейных кораблей 
 	(учесть корабли из таблицы Outcomes)
 */
-select cast(avg(c.numguns * 1.0) as decimal(4,2))
+select cast(avg(c.numguns * 1.0) as decimal(4, 2))
 from (
 		select s.name, s.class from ships as s
 		union
