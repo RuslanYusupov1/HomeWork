@@ -1,0 +1,21 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3574-kr_22_cikly__vspomogatelnye_algoritmy_i_peremennye.html
+использовать Чертежник
+алг
+нач
+цел a, b, i
+вывод "введите число a="
+ввод a
+вывод "введите число b="
+ввод b
+нц для i от 1 до 4
+установить цвет ("красный")
+опустить перо
+сместиться на вектор (a*i, b*i)
+сместиться на вектор (-a*i, b*i)
+сместиться на вектор (-a*i, -b*i)
+сместиться на вектор (a*i, -b*i)
+поднять перо
+сместиться на вектор (a*0, -b)
+кц
+кон
+
