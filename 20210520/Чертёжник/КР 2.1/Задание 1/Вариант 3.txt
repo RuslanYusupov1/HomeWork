@@ -1,0 +1,16 @@
+|https://licey.net/free/18-programmirovanie_na_yazyke_kumir/70-sistema_programmirovaniya_kumir/stages/3573-kr_21_lineinye_algoritmy_risovanie_prostyh_figur.html
+использовать Чертежник
+алг 
+нач
+	цел x, y
+	вывод "Введите x= "
+	ввод x
+	вывод "Введите y= "
+	ввод y
+	установить цвет ("синий")
+	опустить перо
+	сместиться на вектор (x * 0, y)
+	сместиться на вектор (x, -y/2)
+	сместиться на вектор (x, y/2)
+	сместиться на вектор (x * 0, -y)
+кон
